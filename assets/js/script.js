@@ -164,6 +164,7 @@ CSS TABLE OF CONTENTS
 			clickable: true,
 		},
 	});
+
 	// Here this is use for animate ***
 	function animated_swiper(selector, init) {
 		var animated = function animated() {
