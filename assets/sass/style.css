@@ -2239,7 +2239,7 @@ input.main-search-input::placeholder {
   width: 170px;
 }
 .logo img {
-  width: 100%;
+  width: 60%;
 }
 
 .header-top {
@@ -2299,7 +2299,6 @@ input.main-search-input::placeholder {
   top: 0;
   left: 0;
   width: 30%;
-  background: linear-gradient(270deg, #3c72fc 6.32%, #00060c 216.42%);
   height: 100%;
   content: "";
   z-index: -1;
@@ -2470,7 +2469,7 @@ input.main-search-input::placeholder {
 }
 @media (max-width: 991px) {
   .header__main {
-    padding: 15px 0;
+    padding: 5px 0;
   }
 }
 .header__main .bars i {
@@ -3129,6 +3128,7 @@ input.main-search-input::placeholder {
   transition: var(--transition);
 }
 .service__item {
+  min-height: 290px;
   position: relative;
   z-index: 1;
   background-color: var(--white);
@@ -3392,7 +3392,7 @@ input.main-search-input::placeholder {
 .about-area, .about-two-area {
   overflow: hidden;
   position: relative;
-  padding-bottom: 240px;
+  padding-bottom: 120px;
 }
 .about__shape {
   position: absolute;

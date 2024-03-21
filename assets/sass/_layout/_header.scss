@@ -3,7 +3,7 @@
 	display: block;
 	width: 170px;
 	img {
-		width: 100%;
+		width: 60%;
 	}
 }
 // Logo area end here ***
@@ -68,7 +68,7 @@
 			top: 0;
 			left: 0;
 			width: 30%;
-			background: linear-gradient(270deg, #3c72fc 6.32%, #00060c 216.42%);
+			// background: linear-gradient(270deg, #3c72fc 6.32%, #00060c 216.42%);
 			height: 100%;
 			content: "";
 			z-index: -1;
@@ -238,7 +238,7 @@
 			}
 		}
 		@include breakpoint(max-lg) {
-			padding: 15px 0;
+			padding: 5px 0;
 		}
 		.bars {
 			i {

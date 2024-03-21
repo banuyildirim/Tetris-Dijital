@@ -41,6 +41,7 @@
 		transition: var(--transition);
 	}
 	&__item {
+		min-height: 290px;
 		position: relative;
 		z-index: 1;
 		background-color: var(--white);
@@ -336,7 +337,7 @@
 	&-area {
 		overflow: hidden;
 		position: relative;
-		padding-bottom: 240px;
+		padding-bottom: 120px;
 	}
 	&__shape {
 		position: absolute;
