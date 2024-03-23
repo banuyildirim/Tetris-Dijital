@@ -110,6 +110,28 @@ CSS TABLE OF CONTENTS
 	});
 	// Menu active one page js area end here ***
 
+	function sendEmail() {
+		let name = document.getElementById("name").value;
+		let email = document.getElementById("email").value;
+		let tel = document.getElementById("tel").value;
+		let message = document.getElementById("message").value;
+		let finalmessage = `Name : ${name} <br>  Email : ${email} <br> <br>  Telefon : ${tel} <br>  Message : ${message} <br>`;
+		Email.send({
+			SecureToken : "e7e67d6a-a7ce-455f-8003-5713187e2026",
+			To : 'banu.yrm@gmail.com',
+			From : "banuyildirim17@gmail.com",
+			Subject : "Mail from website",
+			Body : finalmessage
+		}).then(
+		  message => alert(message)
+		);
+	}
+
+	$("#submit").on("click", function (e) {
+		e.preventDefault();
+		sendEmail();
+	});
+
 	// Dark mood area start here ***
 	function setThemeColor(color) {
 		const root = document.documentElement;

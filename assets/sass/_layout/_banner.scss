@@ -98,6 +98,7 @@
 			}
 		}
 		h1 {
+			text-shadow: 1px 1px #757575;
 			font-size: 80px;
 			line-height: 90px;
 			font-weight: 700;
@@ -117,6 +118,7 @@
 		p {
 			color: var(--white);
 			opacity: 90%;
+			font-weight: 700;
 		}
 	}
 	&__slider {
