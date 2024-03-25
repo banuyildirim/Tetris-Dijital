@@ -2198,7 +2198,6 @@ input.main-search-input::placeholder {
   bottom: 20px;
   right: 20px;
   z-index: 9999;
-  background-color: var(--whatsapp-color);
   padding: 10px;
   border-radius: 100%;
   cursor: pointer;
@@ -2207,9 +2206,10 @@ input.main-search-input::placeholder {
   color: #fff;
 }
 .sticky-button a i {
-  font-size: 20px;
+  font-size: 45px;
   text-align: center;
   display: inline-block;
+  color: var(--whatsapp-color);
 }
 
 .progress-area .progress {
@@ -3665,9 +3665,10 @@ input.main-search-input::placeholder {
 }
 .case__content {
   position: absolute;
-  bottom: 40px;
+  bottom: 20px;
   width: 100%;
-  left: 30px;
+  text-align: center;
+  word-wrap: break-word;
 }
 .case__btn {
   opacity: 0;

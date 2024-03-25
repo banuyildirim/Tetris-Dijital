@@ -588,9 +588,10 @@
 	}
 	&__content {
 		position: absolute;
-		bottom: 40px;
+		bottom: 20px;
 		width: 100%;
-		left: 30px;
+		text-align: center;
+		word-wrap: break-word;
 	}
 	&__btn {
 		opacity: 0;
