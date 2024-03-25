@@ -116,15 +116,21 @@ CSS TABLE OF CONTENTS
 		let tel = document.getElementById("tel").value;
 		let message = document.getElementById("message").value;
 		let finalmessage = `Name : ${name} <br>  Email : ${email} <br> <br>  Telefon : ${tel} <br>  Message : ${message} <br>`;
-		Email.send({
-			SecureToken : "e7e67d6a-a7ce-455f-8003-5713187e2026",
-			To : 'banu.yrm@gmail.com',
-			From : "banuyildirim17@gmail.com",
-			Subject : "Mail from website",
-			Body : finalmessage
-		}).then(
-		  message => alert(message)
-		);
+		if(name !== '' & email !== '' & tel !== '' & message !== '') {
+			Email.send({
+				Host : "smtp.elasticemail.com",
+				Username : "banuyildirim17@gmail.com",
+				Password : "992A119E0B98E6867764C34104BDFD4820B1",
+				To : "info@tetristekno.com",
+				From : "banuyildirim17@gmail.com",
+				Subject : name,
+				Body : finalmessage
+			}).then(
+			message => message === "OK" ? "Mesajınız ilgili departmanımıza. En kısa sürede size ulaşacağız. Bizi tercih ettiğiniz için teşekkür ederiz." : alert(message)
+			);
+		} else {
+			alert("Mesajınızın eksiksiz ulaşması için lütfen tüm alanları doldurunuz.")
+		}
 	}
 
 	$("#submit").on("click", function (e) {
