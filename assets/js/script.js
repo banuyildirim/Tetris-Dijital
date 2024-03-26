@@ -126,7 +126,7 @@ CSS TABLE OF CONTENTS
 				Subject : name,
 				Body : finalmessage
 			}).then(
-			message => message === "OK" ? "Mesajınız ilgili departmanımıza. En kısa sürede size ulaşacağız. Bizi tercih ettiğiniz için teşekkür ederiz." : alert(message)
+			message => message === "OK" ? alert("Mesajınız ilgili departmanımıza iletildi. En kısa sürede size ulaşacağız. Bizi tercih ettiğiniz için teşekkür ederiz.") : alert(message)
 			);
 		} else {
 			alert("Mesajınızın eksiksiz ulaşması için lütfen tüm alanları doldurunuz.")
